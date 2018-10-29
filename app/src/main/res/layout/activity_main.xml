@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edMaSv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MaSV"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edMaLop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ma Lop"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edMarktoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Diem toan"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/edMarkvan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Diem van"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Them"
+        android:onClick="Add"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvPH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diem trung binh theo lop PH: "/>
+        <TextView
+            android:id="@+id/tvPT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diem trung binh theo lop PT: "/>
+        <TextView
+            android:id="@+id/tvtoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diem trung binh theo mon Toan: "/>
+        <TextView
+            android:id="@+id/tvvan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diem trung binh theo mon Van: "/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvMark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
